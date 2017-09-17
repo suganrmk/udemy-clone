@@ -1,13 +1,13 @@
 <div class="listcoever">
     <div class="imgholder-list">
         <img src="{{ProductImage}}" alt="course image" width="304" height="171">
-        <span class="heartlite"><i class="fa fa-heart"></i></span>
+        <!-- <span class="heartlite"><i class="fa fa-heart"></i></span> -->
     </div>
     <div class="contenfull-right">
         <div class="contenfull-right-top">
             <div class="left-contsided">
                 <span class="conttles">{{ProductTitle}}</span>
-                <span class="minsconten">Jonas Schmedtmann - Web developer</span>
+                <span class="minsconten">{{Productinstructors.name}} - Web developer</span>
                 <span class="ContDetail">{{ProductHeadline}}</span>
             </div>
             <div class="right-contsided">
@@ -18,8 +18,8 @@
             <ul class="privateroomlist">
                 <li><i class="fa fa-book"></i><span>{{Productlectures}} lectures</span></li>
                 <li><i class="fa fa-clock-o"></i><span>{{ProductDuration}}</span></li>
-                <li><i class="fa fa-book"></i><span>All Levels</span></li>
-                <li><i class="fa fa-bed"></i><span>English</span></li>
+                <li><i class="fa fa-book"></i><span>{{ProductLevel}}</span></li>
+                <li><i class="fa fa-bed"></i><span>{{ProductLang}}</span></li>
             </ul>
             <div class="right-sided">
                 <div class="left-inedct">

@@ -12,7 +12,9 @@ export class ProductComponent implements OnInit {
 @Input() ProductRating: any; 
 @Input() Productlectures: any; 
 @Input() ProductDuration: any; 
-
+@Input() ProductLevel: any;
+@Input() ProductLang: any;
+@Input() Productinstructors: any;
 
   constructor() { }
 

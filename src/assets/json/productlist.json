@@ -9,6 +9,13 @@
             "title": "Forex Trading A-Zâ„¢ - With LIVE Examples of Forex Trading",
             "url": "/forex-trading/",
             "is_paid": true,
+            "instructors": [{
+                "job_title": "Engineering Architect",
+                "name": "Stephen",
+                "_class": "user",
+                "url": "/user/sgslo/",
+                "id": 5487312
+            }],
             "price": "2984",
             "image_125_H": "https://udemy-images.udemy.com/course/125_H/308690_6e17_2.jpg",
             "published_title": "forex-trading",
@@ -48,6 +55,13 @@
             "title": "Ionic 2/ Ionic 3 - Build iOS & Android Apps with Angular",
             "url": "/forex-trading/",
             "is_paid": true,
+            "instructors": [{
+                "job_title": "Software Architect",
+                "name": "new user",
+                "_class": "user",
+                "url": "/user/sgslo/",
+                "id": 5487312
+            }],
             "price": "365",
             "image_125_H": "https://udemy-images.udemy.com/course/304x171/1070124_3a0f.jpg",
             "published_title": "forex-trading",

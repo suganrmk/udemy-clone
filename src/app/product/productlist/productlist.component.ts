@@ -26,10 +26,9 @@ export class ProductlistComponent implements OnInit {
 
   ngOnInit() {
 
-    this.CommonServices.get('https://raw.githubusercontent.com/suganrmk/mean/master/productlist.json').subscribe(
+    this.CommonServices.get('https://raw.githubusercontent.com/suganrmk/udemy-clone/master/src/assets/json/productlist.json').subscribe(
       (res) => {
         this.productData = res.results;
-        
        }
     )
 

@@ -1,0 +1,45 @@
+{
+    "count": 922,
+    "next": "https://www.udemy.com/api-2.0/channels/1670/courses?instructionalLevel=all%7Cbeginner&is_angular_app=true&is_topic_filters_enabled=false&lang=en&p=2",
+    "previous": null,
+    "course_labels": null,
+    "results": [{
+        "_class": "course",
+        "id": 308690,
+        "title": "Forex Trading A-Zâ„¢ - With LIVE Examples of Forex Trading",
+        "url": "/forex-trading/",
+        "is_paid": true,
+        "price": "â‚¹7,900",
+        "image_125_H": "https://udemy-images.udemy.com/course/125_H/308690_6e17_2.jpg",
+        "published_title": "forex-trading",
+        "headline": "Forex Trading - Beginners and Experienced - Learn trading by Doing! Live examples: Forex with Real Money in Metatrader 4",
+        "num_subscribers": 19090,
+        "avg_rating_recent": 4.568218298555378,
+        "num_reviews": 2946,
+        "is_wishlisted": false,
+        "num_published_lectures": 52,
+        "image_304x171": "https://udemy-images.udemy.com/course/304x171/308690_6e17_2.jpg",
+        "caption_languages": [
+            "English"
+        ],
+        "instructional_level": "Beginner Level",
+        "content_info": "5.5 hours",
+        "published_time": "2014-12-12T23:58:39Z",
+        "bestseller_badge_content": {
+            "badge_text": "Best Seller",
+            "topic_info": {
+                "url": "/topic/forex/",
+                "title": "Forex"
+            },
+            "context_info": {
+                "url": "/courses/business/finance/",
+                "title": "Finance"
+            }
+        },
+        "is_recently_published": false,
+        "predictive_score": null,
+        "relevancy_score": 1.0680196,
+        "input_features": null,
+        "lecture_search_result": null
+    }]
+}

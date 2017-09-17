@@ -1,0 +1,79 @@
+product {
+    .listcoever {
+        float: left;
+        width: 100%;
+        text-align: left;
+        background: #fff;
+        overflow: hidden;
+        border: 1px solid #dedfe0;
+        border-radius: 2px 2px 0 0;
+        position: relative;
+        padding-right: 10px;
+        background-color: #fff;
+        min-height: 148px;
+        max-height: 148px;
+        margin-bottom: 30px;
+        height: 150px;
+        box-shadow: 0 1px 1px 0 #ececec;
+    }
+    .conttles {
+        float: left;
+        width: 100%;
+        text-align: left;
+        font-size: 14px;
+        font-family: 'Arial';
+        font-weight: bold;
+    }
+    .left-contsided {
+        width: 85%;
+    }
+    span.ContDetail {
+        line-height: 0;
+        font-size: 13px;
+        color: #6a717d;
+        margin: 5px 0 0;
+        padding: 0;
+    }
+    .contenfull-right-top {
+        float: left;
+        width: 100%;
+        margin: 0;
+        padding: 0 0 6px;
+        border-bottom: none;
+        height: 97px;
+        overflow: hidden;
+    }
+    .contenfull-right-bottom {
+        float: left;
+        width: 100%;
+        text-align: left;
+        padding: 0;
+    }
+    .srs-rat span {
+        font-size: 14px;
+        color: #8492a1;
+        float: right;
+        margin: 2px 0 0 2px;
+    }
+    ul.starRating {
+        float: right;
+        li {
+            float: left;
+            margin: 0 2px;
+            color: #f4c150;
+        }
+    }
+    .left-inedct {
+        float: right;
+        width: 90%;
+        width: calc(100% - 25px);
+        text-align: right;
+        padding: 0 6px 0 0;
+    }
+}
+
+productlist {
+    padding-top: 20px;
+    width: 100%;
+    display: inline-block;
+}

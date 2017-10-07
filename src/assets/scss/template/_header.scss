@@ -5,6 +5,7 @@ header {
         float: left;
         width: 100%;
         padding: 0 20px;
+        background: #fff;
         border-bottom: 1px solid #dedfe0;
         box-shadow: 0 1px 1px hsla(220, 7%, 92%, .25);
     }
@@ -30,10 +31,10 @@ header {
         button.SearchBnt {
             position: absolute;
             background: #17aa1c;
-            right: 0;
+            right: -1px;
             top: -2px;
             border: none;
-            bottom: 0;
+            bottom: -1px;
             width: 40px;
             color: #fff;
             font-size: 18px;
@@ -46,12 +47,16 @@ header {
         font-size: 14px;
         display: inline-block;
         float: left;
+        position: relative;
         i.fa.fa-th {
             color: #a1a7b3;
             margin-right: 5px;
             margin-top: 3px;
             float: left;
             font-size: 17px;
+        }
+        &:hover .category {
+            display: block
         }
     }
     .navigation-menu>ul>li>a {
@@ -73,6 +78,67 @@ header {
             text-transform: capitalize;
             font-size: 26px;
             margin: 8px 0 0 0;
+        }
+    }
+    .category {
+        position: absolute;
+        z-index: 9;
+        top: 61px;
+        background: #fff;
+        width: 270px;
+        box-shadow: 0 1px 2px #ccc;
+        display: none;
+        &:before {
+            border-style: solid;
+            border-width: 0 10px 13px;
+            content: "";
+            height: 0;
+            position: absolute;
+            right: 14px;
+            width: 0;
+            border-color: transparent transparent #ccc;
+            top: -14px;
+            left: 14px;
+            right: auto;
+        }
+        &:after {
+            border-style: solid;
+            border-width: 0 10px 13px;
+            content: "";
+            height: 0;
+            position: absolute;
+            right: 14px;
+            width: 0;
+            border-color: transparent transparent #fff;
+            top: -12px;
+            left: 14px;
+            right: auto;
+            border-color: transparent transparent #fff;
+        }
+        ul {
+            float: left;
+            width: 100%;
+            padding: 13px 0px;
+            li {
+                a {
+                    float: left;
+                    width: 100%;
+                    padding: 4px 12px;
+                    color: #747A85;
+                    font-size: 15px;
+                    position: relative;
+                    i {
+                        font-size: 18px;
+                        color: #C8CACF;
+                        margin: 0 15px 0px 0;
+                    }
+                    &:after {
+                        content: "\f105";
+                        font: normal normal normal 14px/1 FontAwesome;
+                        float: right;
+                    }
+                }
+            }
         }
     }
 }

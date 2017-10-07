@@ -6,7 +6,29 @@
                 <a href="#"><img alt="logo" title="logo" src="images/logo1.png"></a>
             </h1>
 
-            <span class="categories"><i class="fa fa-th"></i>categories</span>
+            <span [routerLinkActive]="['active']" class="categories"><i class="fa fa-th"></i>categories
+            
+                <div class="category">
+                    <ul>
+
+                            <li *ngFor="let categorieslist of categories;"><a (click) = onSelect(categorieslist.$value)><i class="fa fa-hand-spock-o"></i>{{categorieslist.$key}}</a></li>
+                            
+                        <!-- <li><a  (click) = onSelect($event) data-category="web"><i class="fa fa-american-sign-language-interpreting"></i>Web Development</a></li>
+                        <li><a  (click) = onSelect($event)  data-category="mobile" ><i class="fa fa-anchor"></i>Mobile Development</a></li>
+                        <li><a (click) = onSelect($event)  data-category="Game"><i class="fa fa-braille"></i>Game Development</a></li>
+                        <li><a  (click) = onSelect($event)  data-category="databases"><i class="fa fa-diamond"></i>Database</a></li>
+                        <li><a [routerLink]="['/productlist']" ><i class="fa fa-edit"></i>Software Testing</a></li>
+                        <li><a [routerLink]="['/productlist']" ><i class="fa fa-envelope-open-o"></i>Software Engineering</a></li>
+                        <li><a [routerLink]="['/productlist']" ><i class="fa fa-handshake-o"></i>Development Tool</a></li>
+                        <li><a [routerLink]="['/productlist']" ><i class="fa fa-hand-spock-o"></i>Ecomerce Engineering</a></li> -->
+                        
+                        
+                    </ul>
+                </div>
+            
+            </span>
+
+
             <div class="searcholder">
                 <input placeholder="Search for Courses" type="text" />
                 <button class="SearchBnt"><i class="fa fa-search"></i></button>

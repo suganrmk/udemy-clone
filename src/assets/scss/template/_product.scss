@@ -77,3 +77,42 @@ productlist {
     width: 100%;
     display: inline-block;
 }
+
+.productFillter {
+    margin-bottom: 10px;
+    .ui-multiselect {
+        border-radius: 3px;
+        min-width: 90px;
+        background: #f2f3f5;
+        .ui-multiselect-panel {
+            min-width: 160px;
+            margin: 0px 0 0 0;
+        }
+        .ui-multiselect-label {
+            background-color: #f2f3f5;
+            padding: 6px 10px;
+            border-radius: 2px;
+            margin: 0;
+            font-weight: normal;
+            text-shadow: none;
+            box-shadow: none;
+            font-size: 14px;
+            font-family: arial;
+            color: #007791;
+        }
+        .ui-multiselect-trigger {
+            border: none;
+            text-align: center;
+            padding: 0 0 0 0;
+            background: none;
+            .fa {
+                margin-top: 8px;
+                margin-left: 0;
+            }
+            .fa:before {
+                content: "\f107";
+                color: #007791;
+            }
+        }
+    }
+}

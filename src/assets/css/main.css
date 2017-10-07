@@ -6,6 +6,7 @@ header .HeaderHolder {
   float: left;
   width: 100%;
   padding: 0 20px;
+  background: #fff;
   border-bottom: 1px solid #dedfe0;
   -webkit-box-shadow: 0 1px 1px rgba(233, 234, 236, 0.25);
           box-shadow: 0 1px 1px rgba(233, 234, 236, 0.25);
@@ -33,10 +34,10 @@ header .searcholder input[type="text"] {
 header .searcholder button.SearchBnt {
   position: absolute;
   background: #17aa1c;
-  right: 0;
+  right: -1px;
   top: -2px;
   border: none;
-  bottom: 0;
+  bottom: -1px;
   width: 40px;
   color: #fff;
   font-size: 18px;
@@ -48,6 +49,7 @@ header span.categories {
   font-size: 14px;
   display: inline-block;
   float: left;
+  position: relative;
 }
 header span.categories i.fa.fa-th {
   color: #a1a7b3;
@@ -55,6 +57,9 @@ header span.categories i.fa.fa-th {
   margin-top: 3px;
   float: left;
   font-size: 17px;
+}
+header span.categories:hover .category {
+  display: block;
 }
 header .navigation-menu > ul > li > a {
   float: left;
@@ -76,6 +81,82 @@ header .logotag a img {
   text-transform: capitalize;
   font-size: 26px;
   margin: 8px 0 0 0;
+}
+header .category {
+  position: absolute;
+  z-index: 9;
+  top: 61px;
+  background: #fff;
+  width: 270px;
+  -webkit-box-shadow: 0 1px 2px #ccc;
+          box-shadow: 0 1px 2px #ccc;
+  display: none;
+}
+header .category:before {
+  border-style: solid;
+  border-width: 0 10px 13px;
+  content: "";
+  height: 0;
+  position: absolute;
+  right: 14px;
+  width: 0;
+  border-color: transparent transparent #ccc;
+  top: -14px;
+  left: 14px;
+  right: auto;
+}
+header .category:after {
+  border-style: solid;
+  border-width: 0 10px 13px;
+  content: "";
+  height: 0;
+  position: absolute;
+  right: 14px;
+  width: 0;
+  border-color: transparent transparent #fff;
+  top: -12px;
+  left: 14px;
+  right: auto;
+  border-color: transparent transparent #fff;
+}
+header .category ul {
+  float: left;
+  width: 100%;
+  padding: 13px 0px;
+}
+header .category ul li a {
+  float: left;
+  width: 100%;
+  padding: 4px 12px;
+  color: #747A85;
+  font-size: 15px;
+  position: relative;
+}
+header .category ul li a i {
+  font-size: 18px;
+  color: #C8CACF;
+  margin: 0 15px 0px 0;
+}
+header .category ul li a:after {
+  content: "\f105";
+  font: normal normal normal 14px/1 FontAwesome;
+  float: right;
+}
+
+footer {
+  background: #333;
+  float: left;
+  padding: 17px 0;
+  width: 100%;
+  font-size: 12px;
+  position: relative;
+  bottom: 0;
+}
+footer .cpyrights {
+  float: left;
+  width: 100%;
+  text-align: center;
+  color: #999;
 }
 
 product .listcoever {
@@ -155,6 +236,183 @@ productlist {
   padding-top: 20px;
   width: 100%;
   display: inline-block;
+}
+
+.productFillter {
+  margin-bottom: 10px;
+}
+.productFillter .ui-multiselect {
+  border-radius: 3px;
+  min-width: 90px;
+  background: #f2f3f5;
+}
+.productFillter .ui-multiselect .ui-multiselect-panel {
+  min-width: 160px;
+  margin: 0px 0 0 0;
+}
+.productFillter .ui-multiselect .ui-multiselect-label {
+  background-color: #f2f3f5;
+  padding: 6px 10px;
+  border-radius: 2px;
+  margin: 0;
+  font-weight: normal;
+  text-shadow: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  font-size: 14px;
+  font-family: arial;
+  color: #007791;
+}
+.productFillter .ui-multiselect .ui-multiselect-trigger {
+  border: none;
+  text-align: center;
+  padding: 0 0 0 0;
+  background: none;
+}
+.productFillter .ui-multiselect .ui-multiselect-trigger .fa {
+  margin-top: 8px;
+  margin-left: 0;
+}
+.productFillter .ui-multiselect .ui-multiselect-trigger .fa:before {
+  content: "\f107";
+  color: #007791;
+}
+
+productdetail {
+  float: left;
+  width: 100%;
+}
+productdetail section {
+  float: left;
+  width: 100%;
+}
+productdetail .banner {
+  float: left;
+  width: 100%;
+  background: #333333;
+  height: 314px;
+  padding: 40px 0;
+  color: #fff;
+}
+productdetail .banner .mainTitle {
+  float: left;
+  width: 100%;
+  margin: 0 0 10px 0;
+}
+productdetail .banner .subTitle {
+  display: inline-block;
+  width: 100%;
+  line-height: 30px;
+  margin-bottom: 10px;
+}
+productdetail .sectionMiddle {
+  float: left;
+  width: 100%;
+}
+productdetail .Requirement {
+  float: left;
+  width: 100%;
+  margin: 40px 0 0 0;
+}
+productdetail .Requirement ul {
+  padding: 0;
+  margin: 0 0 0 20px;
+  float: left;
+  width: 100%;
+}
+productdetail .Requirement ul li {
+  list-style: disc;
+}
+productdetail .Requirement h3 {
+  font-size: 22px;
+  font-weight: 600;
+  margin: 0 0 10px;
+  color: #29303b;
+}
+productdetail .reviewsection {
+  float: left;
+  width: 100%;
+}
+productdetail .review-content {
+  float: right;
+  width: calc(100% - 72px);
+}
+productdetail .review-profile {
+  height: 50px;
+  width: 50px;
+  border: 1px solid #ccc;
+}
+productdetail .review-content-top h4 a {
+  font-size: 15px;
+}
+productdetail .review-content-bottom p,
+productdetail .review-content-bottom p a {
+  font-size: 15px;
+}
+productdetail .FloatingDiv {
+  position: absolute;
+  background: #fff;
+  border: 1px solid #ccc;
+  width: 340px;
+  right: -490px;
+  top: -100px;
+  z-index: 99;
+  padding: 20px 30px;
+}
+productdetail .buy-btn {
+  background: #ec5252;
+  color: #fff;
+  float: left;
+  width: 100%;
+  text-align: center;
+  border-radius: 3px;
+  padding: 12px 0;
+  font-size: 17px;
+}
+productdetail .Addcart-btn {
+  background: none;
+  color: #444;
+  float: left;
+  width: 100%;
+  text-align: center;
+  border-radius: 3px;
+  padding: 12px 0;
+  font-size: 17px;
+  border: 1px solid #444;
+  margin: 10px 0 10px 0;
+}
+productdetail .garente {
+  float: left;
+  width: 100%;
+  text-align: center;
+  font-size: 12px;
+  color: #777;
+  margin: 0 0 8px 0;
+}
+productdetail .includ {
+  float: left;
+  width: 100%;
+  font-size: 18px;
+  margin: 0 0 6px 0;
+}
+productdetail .listamit {
+  float: left;
+  width: 100%;
+}
+productdetail .listamit li {
+  float: left;
+  width: 100%;
+  font-size: 13px;
+  color: #505763;
+  margin: 2px 0;
+}
+
+body {
+  font-family: Open Sans, Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 15px;
+  line-height: 1.43;
+  color: #29303b;
+  background: #f4f4f4;
 }
 
 /*# sourceMappingURL=main.css.map */

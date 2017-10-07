@@ -1,5 +1,5 @@
 <div class="container">
-    <!-- <div class="productFillter">
+    <div class="productFillter">
         <p-multiSelect [options]="cities"></p-multiSelect>
         <p-multiSelect [options]="cities"></p-multiSelect>
         <p-multiSelect [options]="cities"></p-multiSelect>
@@ -7,11 +7,12 @@
 
         <p-multiSelect class="pull-right" [options]="cities"></p-multiSelect>
 
-    </div> -->
+    </div>
 
     <div *ngIf="this.productData" class="ProductContainer">
         <product *ngFor="let product of productData" [ProductTitle]="product.title" [ProductPrice]="product.price" [ProductImage]="product.image_125_H" [Productlectures]="product.num_published_lectures" [ProductRating]="product.avg_rating_recent" [ProductDuration]="product.content_info"
-            [ProductLevel]="product.instructional_level" [ProductLang]="product.caption_languages" [ProductHeadline]="product.headline" [Productinstructors]="product.instructors"></product>
+            [ProductLevel]="product.instructional_level" [ProductLang]="product.caption_languages" [ProductHeadline]="product.headline" [Productinstructors]="product.instructors[0]">
+        </product>
     </div>
 
 </div>
